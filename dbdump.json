@@ -1,0 +1,34 @@
+[  
+    {  
+        "_id":"546dffb93ad9babbd214757f",
+        "name":"JetBrains (IntelliJ & more)",
+        "url":"https://www.jetbrains.com/student/",
+        "type":"free",
+        "__v":0,
+        "date":"2014-11-20T14:50:33.355Z"
+    },
+    {  
+        "_id":"546dffe33ad9babbd2147580",
+        "name":"GitHub Student Developer Pack",
+        "url":"https://education.github.com/pack/",
+        "type":"free",
+        "__v":0,
+        "date":"2014-11-20T14:51:15.230Z"
+    },
+    {  
+        "_id":"546dfffd3ad9babbd2147581",
+        "name":"Microsoft Office",
+        "url":"http://nith.onthehub.com/",
+        "type":"free",
+        "__v":0,
+        "date":"2014-11-20T14:51:41.330Z"
+    },
+    {  
+        "_id":"546e00173ad9babbd2147582",
+        "name":"Adobe Creative Cloud",
+        "url":"http://www.adobe.com/no/creativecloud/buy/students.html",
+        "type":"subscription",
+        "__v":0,
+        "date":"2014-11-20T14:52:07.135Z"
+    }
+]
