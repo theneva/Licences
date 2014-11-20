@@ -5,6 +5,8 @@ var Licence = require('./licence');
 var app = express();
 app.use(bodyParser.json());
 
+app.use(express.static(__dirname + '/licences-web'));
+
 app.get('/api/licences', function(req, res, next) {
 	Licence.find(function(err, licences) {
 		if (err) return next(err);

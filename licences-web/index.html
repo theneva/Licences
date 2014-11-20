@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
-    
+
     <script src="./js/jquery-2.1.0.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/blocs.js"></script>
@@ -16,7 +16,9 @@
 <body>
 <!-- Main container -->
 <div class="page-container">
-    <!-- Navigation Bloc --><div class="bloc l-bloc " id="nav-bloc">
+
+<!-- Navigation Bloc -->
+<div class="bloc l-bloc " id="nav-bloc">
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
@@ -34,7 +36,11 @@
 			</div>
 		</nav>
 	</div>
-</div><!-- Navigation Bloc END --><!-- bloc-1 --><div class="bloc l-bloc " id="bloc-1">
+</div>
+<!-- Navigation Bloc END -->
+
+<!-- bloc-1 -->
+<div class="bloc l-bloc " id="bloc-1">
 	<div class="container bloc-lg b-divider">
 		<div class="row">
 			<div class="col-sm-12">
@@ -43,6 +49,7 @@
 				</h2>
 			</div>
 		</div>
+
 		<div class="row voffset">
 			<div class="col-sm-3">
 				<img src="img/placeholder-image.png" class="img-responsive" alt='' />
@@ -120,7 +127,11 @@
 			</div>
 		</div>
 	</div>
-</div><!-- bloc-1 END --><!-- Footer - bloc-2 --><div class="bloc l-bloc " id="bloc-2">
+</div>
+<!-- bloc-1 END -->
+
+<!-- Footer - bloc-2 -->
+<div class="bloc l-bloc " id="bloc-2">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-3">
@@ -145,12 +156,35 @@
 			</div>
 		</div>
 	</div>
-</div><!-- Footer - bloc-2 END -->
+</div>
+<!-- Footer - bloc-2 END -->
 </div>
 <!-- Main container END -->
 
+<script src="js/main.js"></script>
+<script>
+    $.getJSON('http://localhost:3123/api/licences', function(data) {
+        data.forEach(function(element) {
+            console.log(element);
+        });
+    });
+</script>
+
+<label>
+    Name
+    <input id="name"/>
+</label>
+<label>
+    URL
+    <input id="url"/>
+</label>
+<label>
+    Type
+    <input id="type"/>
+</label>
+<button onclick="addNewSite()">Add new site</button>
 </body>
-    
+
 <!-- Google Analytics -->
 
 <!-- Google Analytics END -->
